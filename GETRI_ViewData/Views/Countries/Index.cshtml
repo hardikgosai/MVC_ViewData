@@ -1,0 +1,23 @@
+﻿<title>Country List</title>
+<html>
+
+<head>
+</head>
+<body>
+    <h1>UnOrdered List</h1>
+    <ul>
+        @foreach (var country in (List<string>)ViewData["Countries"])
+        {
+            <li>@country</li>
+        }
+    </ul>
+
+    <h1>Ordered List</h1>
+    <ol>
+        @foreach (var country in (List<string>)ViewData["Countries"])
+        {
+            <li>@country</li>
+        }
+    </ol>
+</body>
+</html>

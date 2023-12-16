@@ -1,0 +1,20 @@
+﻿<title>Customer List</title>
+<html>
+
+<head>
+</head>
+<body>
+    <table>    
+            @foreach (var customer in (List<CustomerDetails>)ViewData["CustomerDetails"])
+            {
+                <tr style="border:double;">
+                    <td style="width:150px; border:double;">@customer.CustomerId</td>
+                    <td style="width:150px; border:double;">@customer.CustomerName</td>
+                    <td style="width:150px; border:double;">@customer.CustomerCity</td>
+                    <td style="width:150px; border:double;">@customer.CustomerAddress</td>
+                </tr>
+            }
+        
+    </table>
+</body>
+</html>

@@ -1,0 +1,18 @@
+﻿@{
+    var student = ViewData["Student"] as GETRI_ViewData.Models.StudentModel;
+    //StudentModel student = (StudentModel)ViewData["Student"];
+}
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <h2>@ViewData["Header"]</h2>
+
+<h1>Student Id : @student.StudentId</h1>
+<h1>Student Name: @student.StudentName</h1>
+<h1>Student Branch: @student.StudentBranch</h1>
+<h1>Student Section: @student.StudentSection</h1>
+<h1>Student Gender: @student.StudentGender</h1>
+</body>
+</html>

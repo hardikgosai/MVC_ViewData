@@ -1,0 +1,18 @@
+﻿@{
+    var customer = (GETRI_ViewData.Models.CustomerModel)ViewData["Customer"];
+}
+<html>
+ <head>
+    <title>@ViewData["Title"]</title>
+</head>
+<body>
+    <h1>@ViewData["Header"]</h1>
+    <h2>Customer Id : @customer.CustomerId</h2>
+    <h2>Customer Name: @customer.CustomerName</h2>
+    <h2>Customer Address: @customer.CustomerAddress</h2>
+    <h2>Customer Email: @customer.CustomerEmail</h2>
+    <h2>Customer Mobile: @customer.CustomerContact</h2>
+    <h2>Customer Age: @customer.CustomerAge</h2>
+    <h2>Customer Gender: @customer.CustomerGender</h2>
+</body>
+</html>

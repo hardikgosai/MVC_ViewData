@@ -1,0 +1,22 @@
+﻿<title>Courses List</title>
+<html>
+    
+    <head></head>
+    <body>
+        <h1>UnOrdered List</h1>
+<ul>
+            @foreach (var course in (List<string>)ViewData["Courses"])
+            {
+                <li>@course</li>                    
+            }
+</ul>
+
+<h1>Ordered List</h1>
+<ol>
+            @foreach (var course in (List<string>)ViewData["Courses"])
+            {
+                <li>@course</li>                    
+            }
+</ol>
+    </body>
+</html>
